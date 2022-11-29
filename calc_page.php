@@ -4,13 +4,9 @@
 <script src="/staff/js/include_calc.js"></script>
 
 <?php
-
-	$check_number = isset($_GET["nbox"]) ? $_GET["nbox"] : 0;
-
-	$answer;
-	$answer	= calculation($check_number);
-	$len		= count($answer);
-
+	$check_number	= isset($_GET["nbox"]) ? $_GET["nbox"] : 0;
+	$answer		= calculation($check_number);
+	$len			= count($answer);
 
 	function calculation($t){
 
@@ -23,16 +19,12 @@
 		$answer_ary[] = 2;
 
 		for ($i=2; $i<=$t; $i++) {
-
 			if($i % 2 === 0){
 				continue;
 			}
-
 			$odd = $i;
-			
 			$odd_ary[] = $odd;
 		}
-
 		
 		$odd_len = count($odd_ary);
 
@@ -60,13 +52,9 @@
 			}
 
 			$answer_ary[] = $target_odd;
-			
 		}
-
-
 		return $answer_ary;
 	}
-
 ?>
 
 <?php include('tmpl/calc_page.html')?>
