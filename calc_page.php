@@ -69,6 +69,6 @@
 
 ?>
 
-<?php include('tmpl/calc_page.php')?>
+<?php include('tmpl/calc_page.html')?>
 
 <?php include('_footer.php')?>
