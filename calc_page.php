@@ -1,9 +1,7 @@
 <?php include('_header.php')?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <script src="/staff/js/include_calc.js"></script>
-
 
 <?php
 
@@ -72,8 +70,6 @@
 ?>
 
 
-
-
 <main>
 
 	素数早見表
@@ -98,68 +94,5 @@
 	</div>
 
 </main>
-
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
-main{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: 'Noto Sans JP' , sans-serif;
-}
-
-button{
-	background-color: #fff;
-	width: 100px;
-	height: 40px;
-	border-radius: 30px;
-	color: #fff;
-	background-color: orangered;
-	opacity: 0.5;
-	border: none;
-}
-
-button:hover{
-	opacity: 0.3;
-}
-
-input[type="number"]{
-	width: 100px;
-	height: 30px;
-	margin: 20px 0;
-}
-
-.push-disp{
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 1010px;
-	max-height: 50vh;
-	overflow: scroll;
-	background-color: #faeffb;
-	margin-top: 50px;
-}
-.push-disp::-webkit-scrollbar{
-	display:none;
-}
-
-.push-disp > .target-ball{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: #58175e;
-	color: #fff;
-	font-size: 16px;
-	margin: 20px;
-}
-
-</style>
-
-
-
 
 <?php include('_footer.php')?>
