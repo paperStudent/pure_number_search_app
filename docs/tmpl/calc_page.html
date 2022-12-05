@@ -1,0 +1,24 @@
+<main>
+
+	素数早見表
+
+	<button>
+		check!
+	</button>
+
+	<form method="get">
+		<input type="number" id="nbox" name="nbox" min="2" max="<?=MAX_NUM?>">
+	</form>
+
+	<div style="color:orange;"><?php echo $check_number; ?>までの</div>	
+	<div style="color:orange;">素数は<?php echo $len; ?>個</div>
+
+	<div class="push-disp" data-num="">
+		<?php for($i=0; $i<$len; $i++){?>
+			<span class="target-ball" style="display: none;">
+				<?php echo $answer[$i];?>
+			</span>
+		<?php }?>
+	</div>
+
+</main>
